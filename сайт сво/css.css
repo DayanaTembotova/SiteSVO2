@@ -1,0 +1,502 @@
+header {
+    background-color: #ffffff; 
+    padding: 10px; 
+}
+header a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    display: inline-block; 
+    font-size: 17px; 
+}
+header a:hover {
+    background-color: #ffffff; 
+    color: rgb(124, 185, 254); 
+}
+.u-nav-container-collapse {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+}
+.u-nav-item {
+    list-style-type: none; 
+    display: inline; 
+}
+
+.u-nav-item a {
+    color: rgb(46, 46, 46); 
+    text-decoration: none; 
+    display: inline-block; 
+    margin-right: 20px; 
+    font-size: 17px; 
+}
+
+.u-nav-item a:hover {
+    background-color: rgb(255, 255, 255); 
+}
+h2 {
+    text-align: center;
+    font-size: 65px; 
+    margin: 20px 0; 
+    margin-top: 100px;
+    font-size: 3.75rem;
+  text-transform: none;
+  font-weight: 700;
+}
+#text1 {
+    text-align: center; 
+    font-size: 20px; 
+    line-height: 1.8;
+    margin: 20px 1px 0;
+}
+#soldat{
+    width: 100vw; /* Ширина во всю видимую область экрана */
+    height: 465px;
+    object-fit: cover; /*  Растягивает изображение, сохраняя пропорции и обрезая излишки */
+    object-position: 100% 53.21%;
+    margin: 0; /* Убирает отступы */
+    padding: 0; /* Убирает внутренние отступы */
+    position: absolute; /* Позиционирует элемент абсолютно */
+    margin-top: 100px;
+    left: 0;
+    z-index: -1; 
+    /*width: 100%;
+    height: 465px;
+  object-position: 100% 53.21%;
+  margin-top: 100px;
+  margin-bottom: 0;*/
+    /*height: 500px;
+    width: 1700px;
+    position: relative;
+    left: -10px;*/
+}
+#punct1 {
+    display: flex; 
+    justify-content: space-between; 
+    position: absolute;
+    top: -200; 
+    left: 0;
+    right: 0; 
+}
+#punct1 div {
+    flex: 1;
+    display: flex; 
+    justify-content: center;   
+}
+#punct1 img {
+    width: 250px; 
+    height: auto; 
+    margin: 0 10px;    
+}
+
+/*#img2 {
+    min-height: 400px;
+    width: auto;
+    background-image: url("images/i11.webp");
+    background-position: 50% 50%;
+    top: -250px;
+}*/
+
+#punct2 {
+    position: relative; /* Позволяет дочерним элементам позиционироваться относительно этого контейнера */
+}
+#img2 {
+    position: absolute; /* Позволяет изображению накладываться на другие элементы */
+    top: 490px; /* Установите нужное значение для вертикального положения */
+    left: 200px; /* Установите нужное значение для горизонтального положения */
+    width: 550px; /* Установите нужную ширину изображения */
+    height: auto; /* Сохраняет пропорции изображения */    
+}
+#way {
+    position: relative; /* Позволяет тексту находиться поверх изображения */
+    margin-bottom: 100px;  
+    
+}
+#h2-2 {
+    padding-top: 600px;
+    font-size: 48px; /* Установите нужный размер шрифта */
+    line-height: 1.5; /* Установите межстрочный отступ */
+    margin-left: 550px;
+}
+#text2 {
+    font-size: 22px; /* Установите нужный размер шрифта */
+    line-height: 1.5; /* Установите межстрочный отступ */
+    margin-top: 30px; /* Установите отступ сверху */
+    margin-left: 800px;
+}
+#punct3 {
+    text-align: center; 
+    padding-top: 30px;
+}
+#punct3 h6 {
+    color: gray; 
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.25rem;
+    width: 500px;
+    margin: 89px auto 0;
+}
+#punct3 h3 {
+    font-size: 60px; 
+}
+#punct3 a {
+    color: black; 
+    text-decoration: none; 
+    font-size: 20px;
+}
+#punct3 .u-file-icon img {
+    width: 20px; 
+    vertical-align: middle; 
+}
+#blue-line-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 10px; /* Задаем высоту контейнера (изначально высота линии 0) */
+    padding-top: 50px; /*  Отступ сверху, можно убрать или изменить */
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем по горизонтали */
+  }
+  
+  #blue-line {
+    width: 0; /* Изначально линия невидима */
+    height: 10px;
+    background-color: rgb(39, 94, 181);
+    /* position: absolute; Убираем абсолютное позиционирование */
+    /* bottom: 0; Убираем позиционирование по нижней границе */
+  }
+
+#punct4 {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+#twosoldiers {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 60px;
+    left: 0;
+    z-index: -1;    
+}
+#white-overlay {
+    position: absolute;
+    top: 50%; /* Начинаем с загороженной нижней части */
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    z-index: 0;
+    transition: top 0.3s ease; /* transition для свойства top */
+}
+body { /* Добавлено для обнуления margin у body, чтобы убрать отступы */
+    margin: 0; 
+}
+#punct5 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Важно: выравнивание по верхнему краю */
+    padding: 20px;
+    position: relative;
+    background-color: rgb(39, 94, 181);
+    height: 400px; /*  Фиксированная высота для #punct5 */
+  }
+  .feature-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start;  Выравнивание по верхнему краю внутри контейнера */
+    align-items: center; /* Выравнивание элементов по центру горизонтально */
+    height: 100%; /* Занимает всю высоту #punct5 */
+  }
+  .feature-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(39, 94, 181);
+    z-index: -1;
+    border-radius: inherit;
+  }
+  .feature-img {
+    width: 75px;
+    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 0; /* Убрала отступ, чтобы использовать flexbox */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .feature-text {
+    font-size: 23px;
+    margin-top: 7px; /* Убрала отступ, чтобы использовать flexbox */
+  }
+  h5 {
+    font-size: 1.5em;
+    margin: 7px; /* Убрала отступ, чтобы использовать flexbox */
+  }
+  /* Класс для регулировки размера заголовков */
+  .heading-small {
+    font-size: 1.2em;
+  }
+  .heading-large {
+    font-size: 2em;
+  }
+  /* Голубая линия - больше не нужна */
+  /* #blue-line {
+      width: 100%;
+      height: 200px;
+      background-color: rgb(39, 94, 181);
+      position: relative;
+      top: -30px;
+      z-index: 0;
+    } */
+  
+  /* Класс для отображения элемента */
+  .visible {
+    opacity: 1 !important;
+  }
+
+  #punct6 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 60px;
+  }
+  #left-column {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; Удалил, так как теперь #hands под текстом */
+  }
+  #middle-column {
+    width: 30%;
+      display: flex; /* Добавляем flex-контейнер */
+      flex-direction: column; /* Размещаем элементы вертикально */
+      align-items: center;
+  }
+  #right-column {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #letter-zimg {
+    width: 100%;
+    height: 700px;
+    /*max-height: 500px;*/
+    object-fit: cover;
+  }
+  #hands {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    margin-left: 525px;
+    margin-top: -270px;
+  }
+  
+  #fortext {
+    text-align: center;
+    font-size: 23px;
+  }
+  #readmore {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #hug {
+    width: 300px;
+    height: 400px;
+    /*max-height: 350px;*/
+    object-fit: cover;
+  }
+  #symbol {
+    margin-top: 20px;
+    width: 300px;
+    height: 270px;
+    /*max-height: 250px;*/
+    object-fit: cover;
+  }
+  /* Настройка размеров изображений */
+  .u-file-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+  .u-file-icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #punct6 a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  #punct7 {
+    text-align: center; /* Выравнивание заголовка по центру */
+  }
+  .psychologist-row {
+    display: flex; /* Размещаем блоки в ряд */
+    justify-content: center; /* Размещаем блоки по центру */
+    margin-bottom: 20px; /* Отступ между строками */
+    gap: 20px; /* Расстояние между блоками (подстройте значение) */
+  }
+  .psychologist-block {
+    width: 500px; /* Фиксированная ширина блоков */
+    padding: 15px;
+    border: 1px solid #ccc; /* Рамка для наглядности */
+    border-radius: 8px;
+    display: flex; /* Flex для содержимого блока */
+    /* align-items: flex-start;  Убираем выравнивание по верхнему краю */
+    text-align: left; /* Выравниваем текст по левому краю */
+  }
+  .psychologist-img {
+    width: 250px; /* Размер изображения */
+    height: 250px;
+    border-radius: 50%; /* Круглая форма */
+    margin-right: 15px; /* Отступ справа от изображения */
+    object-fit: cover; /* Обрезать изображение, если оно не помещается */
+    margin-bottom: 0; /* Убираем отступ снизу */
+  }
+  
+  .psychologist-position {
+    color: rgb(39, 94, 181); /* Голубой цвет */
+    margin-top: 5px; /* Отступ от имени */
+  }
+  
+  /* Стили для расположения текста напротив изображения, но друг под другом */
+  .text-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .text-container h4,
+  .text-container h5,
+  .text-container p {
+    margin-bottom: 5px; /* Отступы между элементами текста */
+  }
+  #punct8 {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #top-section {
+    display: flex; /* Контейнер для описания и комментариев */
+    justify-content: space-between; /* Распределяет пространство между блоками */
+    align-items: flex-start; /* Выравнивает блоки по верхнему краю */
+    /* Ширина и положение секции регулируются здесь: */
+    width: 80%;
+    margin: 0 auto; /*  Центрирование всей секции */
+  }
+  
+  #description {
+    width: 45%; /* Ширина блока с описанием (регулируйте) */
+    text-align: left; /* Выравнивание текста в блоке описания */
+    font-size: 37px; /* Задайте нужный размер текста здесь */
+  }
+  
+  #comments-section {
+    width: 45%; /* Ширина блока с комментариями (регулируйте) */
+  }
+  
+  .comment {
+    margin-bottom: 20px; /* Отступ между комментариями */
+    padding: 10px;
+    border: 1px solid #ccc; /* Рамка для наглядности */
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .marks {
+    width: 30px; /* Размер кавычек */
+    height: 30px;
+    margin-bottom: 5px; /* Отступ от текста комментария */
+  }
+  
+  /* Стили для текста в комментариях */
+  .comment p {
+    font-style: italic; /* Курсив для текста комментария */
+  }
+  
+  .comment h5 {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  #punct8 h2 {
+    font-size: 30px; /* Размер заголовка */
+    margin-bottom: 20px; /* Отступ от заголовка до контента */
+  }
+  #punct9 {
+    text-align: left; /* Центрируем заголовок */
+    padding: 20px;
+   margin-top: 60px;
+  }
+  #punct9 h2 {
+    margin-top: -10px;
+    margin-bottom: 20px; /* Отступ между заголовком и формой */
+    font-size: 2em; /* Можно регулировать размер заголовка здесь */
+  }
+  .form-container {
+    width: 700px; /* Регулируйте ширину формы здесь (увеличено) */
+    margin: 20px auto;
+    padding: 30px; /*  Увеличен внутренний отступ */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: sans-serif; /* Можно задать шрифт */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Увеличен отступ между полями */
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px; /* Увеличен отступ от метки до поля */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px; /* Увеличен размер поля ввода */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Важно, чтобы padding не увеличивал ширину */
+    font-size: 16px; /* Увеличен размер текста в поле */
+  }
+  
+  textarea {
+    height: 150px; /* Увеличена высота текстового поля */
+  }
+  
+  button[type="submit"] {
+    background-color: #3e7e8e; /* Зеленый цвет кнопки */
+    color: white;
+    padding: 12px 24px; /* Увеличен размер кнопки */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px; /* Увеличен размер текста на кнопке */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #366371; /* Более темный зеленый при наведении */
+  }
+  
